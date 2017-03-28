@@ -113,7 +113,7 @@
            var mtlLoader = new THREE.MTLLoader();
             mtlLoader.setBaseUrl('assets/');
             mtlLoader.setPath('assets/');
-            mtlLoader.load('RHINO_Comp_Scale2.mtl', function (materials) {
+            mtlLoader.load('RHINO_Comp_Scale3.mtl', function (materials) {
 
                 materials.preload();
 				var blueMaterial = new THREE.MeshBasicMaterial( { color: 0xd3d3d3, transparent: true, opacity: 0.9 } );
@@ -124,7 +124,7 @@
                 var objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
                 objLoader.setPath('assets/');
-                objLoader.load('RHINO_Comp_Scale2.obj', function (object) {
+                objLoader.load('RHINO_Comp_Scale3.obj', function (object) {
 			
                     scene.add(object);
 
