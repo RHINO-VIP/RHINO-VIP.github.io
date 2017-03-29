@@ -1,9 +1,13 @@
 * {box-sizing:border-box}
 /*body {font-family: Verdana,sans-serif;}*/
-.slides {display:none}
+.slides {display:none;
+		width:auto;
+		height:auto;}
 
 .gallery-box {
-  max-width: 1000px;
+  max-width: 600px;
+  height:auto;
+  width:auto;
   position: relative;
   margin: auto;
 }
@@ -32,6 +36,9 @@
 
 
 .fade {
+	display:none;
+		width:auto;
+		height:auto;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
