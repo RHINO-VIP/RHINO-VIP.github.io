@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="mystyles.css">
+        <title>Rover Software Team</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            overflow:scroll  
+        </style>
+    </head>
+    <body>
+        
+<div id="topStuff">
+<div class="logo">
+    <img src="rhino_logo.png" alt="W3C" width="250" height="150">
+ </div>
+
+<div id="title">
+    <h1 id="ro">R</h1><h1>OVER</h1>
+</div>
+</div>
+
+<div id="sidenav">
+    <ul>
+        <li><a href="index.html">Home</a></li>     
+        <li><a href="forum2.html">Forum</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="teams.html">Teams</a></li>
+    </ul>
+</div>        <div id="main"> <h2>Software Team </h2>
+        <p id="intro"> 
+           The software team are responsible for building the message passing
+           system that will be used to communicate between the individual nodes
+           of the system. This is done without a central processing node and the
+           design allows for the system to continue working even in the result
+           of connections between nodes failing.
+        </p>
+        <table id="softwareLeaders">
+            <caption> Subteam Leaders and their Teams </caption> <br>
+            <tr>
+                <th> Forname </th>
+                <th> Surname </th>
+                <th> Leaders Of </th>
+            </tr>
+            <tr>
+                <td> David </td>
+                <td> Dunphy</td>
+                <td> Overall Software Team and Message Passing Team </td>
+            </tr>
+            <tr>
+                <td> Andrew </td>
+                <td> Fagan </td>
+                <td> Resource Discovery Team </td>
+            </tr>
+            <tr>
+                <td> Paul </td>
+                <td> Bryden </td>
+                <td> Message Specification Team </td>
+            </tr>
+        </table>
+        <p id="resource"> 
+            The resource discovery team's role is to deal with the initial start 
+            up of the system. Their code allows each individual node to know what
+            data is available on the network, how many node away the data is and
+            what serial port on the microcontroller to use to get it.
+        </p>
+        <p id="specs">
+            The message specification team are responsible for setting up and
+            maintaining the specification of what is contained in a packet and
+            a message. In addition they are responsible for the code which both
+            creates these packets for sending and for unpacking them when a node
+            receives them.
+        </p>
+        <p id="passingQueueing">
+            The message passing and queueing team are responsible for the code
+            that is used when a node receives a message. The aim is that the 
+            node can check whether it is for itself or not and whether it is
+            part of a larger message. It stores the packets in a buffer until
+            the full message is received then passes them to a message queue to
+            be executed.
+        </p>
+        <table id="teamMembers">
+            <caption> Software Team Members and Their Subteam </caption><br>
+                        <tr>
+                <th> Forename </th>
+                <th> Surname </th>
+                <th> Subteam </th>
+            </tr>
+                        <tr>
+                <td> David</td>
+                <td> Dunphy</td>
+                <td> Message Passing and Queueing</td>
+            </tr>
+                        <tr>
+                <td> Kyle</td>
+                <td> Miller</td>
+                <td> Message Passing and Queueing</td>
+            </tr>
+                        <tr>
+                <td> Gary</td>
+                <td> Rea</td>
+                <td> Message Passing and Queueing</td>
+            </tr>
+                        <tr>
+                <td> Paul</td>
+                <td> Bryden</td>
+                <td> Message Specification</td>
+            </tr>
+                        <tr>
+                <td> Jack</td>
+                <td> Moore</td>
+                <td> Message Specification</td>
+            </tr>
+                        <tr>
+                <td> David</td>
+                <td> Pocock</td>
+                <td> Message Specification</td>
+            </tr>
+                        <tr>
+                <td> Andrew</td>
+                <td> Fagan</td>
+                <td> Resource Discovery</td>
+            </tr>
+                        <tr>
+                <td> Peter</td>
+                <td> De Jonckheere</td>
+                <td> Resource Discovery</td>
+            </tr>
+                    </table></div>
+    </body>
+</html>

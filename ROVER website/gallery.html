@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8"/>
+    <meta name="Gallery" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" type="text/css" href="gallerystyle.css" media="screen" />
+</head>
+<body>
+
+<div id="topStuff">
+<div class="logo">
+    <img src="rhino_logo.png" alt="W3C" width="250" height="150">
+ </div>
+
+<div id="title">
+    <h1 id="ro">R</h1><h1>OVER</h1>
+</div>
+</div>
+
+<div id="sidenav">
+    <ul>
+        <li><a href="index.html">Home</a></li>    
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="forum.html">Newsfeed</a></li>
+        <li><a href="teams.html">Teams</a></li>
+    </ul>
+</div><div id="main">
+<h2>Gallery</h2>
+ 
+<div class="gallery-box">
+
+<div class="slides fade">
+  <div class="slidenum">1 / 4</div>
+  <img src="arduino.jpg" height="530" style="width:100%">
+</div>
+
+<div class="slides fade">
+  <div class="slidenum">2 / 4</div>
+  <img src="commsuml.png" height="530" style="width:100%">
+</div>
+
+<div class="slides fade">
+  <div class="slidenum">3 / 4</div>
+  <img src="mounting.JPG" style="width:100%">
+</div>
+    
+<div class="slides fade">
+  <div class="slidenum">3 / 4</div>
+  <img src="Chass.JPG" style="width:100%">
+</div>    
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="point"></span> 
+  <span class="point"></span> 
+  <span class="point"></span> 
+  <span class="point"></span> 
+</div>
+
+<script>
+var index = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("point");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    index++;
+    if (index> slides.length) {index = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" shown", "");
+    }
+    slides[index-1].style.display = "block";  
+    dots[index-1].className += " shown";
+    setTimeout(showSlides, 4000); 
+}
+</script>
+<br>
+<hr>
+
+<div class="moveable">
+  <div class="image">
+    <a target="_blank" href="arduino.jpg">
+      <img src="arduino.jpg" alt="image 3" width="600" height="400">
+    </a>
+    <div class="desc">"Software team hard at work"</div>
+  </div>
+</div>
+
+<div class="moveable">
+  <div class="image">
+    <a target="_blank" href="commsuml.png">
+      <img src="commsuml.png" alt="image 3" width="600" height="400">
+    </a>
+    <div class="desc">"UML diagram for the bot's comunications"</div>
+  </div>
+</div>
+
+<div class="moveable">
+  <div class="image">
+    <a target="_blank" href="mounting.JPG">
+      <img src="mounting.JPG" alt="image 3" width="600" height="400">
+    </a>
+    <div class="desc">"CAD of the motor mounting"</div>
+  </div>
+</div>
+
+<div class="moveable">
+  <div class="image">
+    <a target="_blank" href="Chass.JPG">
+      <img src="Chass.JPG" alt="image 3" width="600" height="400">
+    </a>
+    <div class="desc">"CAD of our robot's frame</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html> 

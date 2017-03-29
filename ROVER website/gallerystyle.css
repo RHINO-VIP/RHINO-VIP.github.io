@@ -1,0 +1,100 @@
+* {box-sizing:border-box}
+/*body {font-family: Verdana,sans-serif;}*/
+.slides {display:none}
+
+.gallery-box {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+ 
+.slidenum {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.point {
+  margin: 0 2px;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.shown {
+  background-color: #878787;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.image {
+    border: 1px solid #ccc;
+}
+
+div.image:hover {
+    border: 2px solid #777;
+}
+
+div.image img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.moveable {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px){
+    .moveable {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .moveable {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
