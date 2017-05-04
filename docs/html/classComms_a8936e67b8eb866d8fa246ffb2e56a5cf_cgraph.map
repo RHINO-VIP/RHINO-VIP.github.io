@@ -1,0 +1,5 @@
+<map id="Comms::checkMessages" name="Comms::checkMessages">
+<area shape="rect" id="node2" href="$classMessageQueue.html#a28bec55388d7f460e3c8ce12a39ac80d" title="MessageQueue::popMessage" alt="" coords="235,5,445,32"/>
+<area shape="rect" id="node3" href="$classMessageQueue.html#aae80e2efae5a784504043632fec65961" title="MessageQueue::queueSize" alt="" coords="242,56,438,83"/>
+<area shape="rect" id="node4" href="$classMessage.html#aac9db07967f5d55587c607de97f2e7dc" title="Message::readMessage" alt="" coords="253,107,427,133"/>
+</map>

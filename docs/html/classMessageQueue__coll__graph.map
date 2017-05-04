@@ -1,0 +1,5 @@
+<map id="MessageQueue" name="MessageQueue">
+<area shape="rect" id="node3" href="$classMessage.html" title="{Message\n|+ _messageID\l+ _targetService\l+ _sourceService\l+ _typeOfMessage\l+ _messageBitfields\l|+ Message()\l+ toPackets()\l+ readMessage()\l}" alt="" coords="10,491,163,656"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="29,147,155,224"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="149,248,275,325"/>
+</map>

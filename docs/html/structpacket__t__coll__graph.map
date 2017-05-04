@@ -1,0 +1,4 @@
+<map id="packet_t" name="packet_t">
+<area shape="rect" id="node3" title="STL class. " alt="" coords="15,147,141,224"/>
+<area shape="rect" id="node5" href="$structpacket__header__t.html" title="{packet_header_t\n|+ flags\l+ messageID\l+ targetService\l+ sourceService\l+ packetID\l+ crc\l|}" alt="" coords="177,289,305,439"/>
+</map>
